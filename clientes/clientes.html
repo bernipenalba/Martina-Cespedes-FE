@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes</title>
+  <link rel="stylesheet" href="clientes.css">
+  <link rel="stylesheet" href="../base.css">
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <!-- Logo de la empresa -->
+      <img src="../img/LogoBlanco.png" alt="Logo de la empresa" class="logo">
+    </div>
+    <div class="navbar-right">
+      <!-- Icono del menú desplegable -->
+      <button id="toggleMenuBtn" class="menu-toggle-btn">&#9776;</button>
+      <!-- Opciones de usuario -->
+      <div class="user-options" id="userOptions">
+        <a href="#">Cerrar Sesión</a>
+        <!-- Otros enlaces de opciones de usuario -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-menu">
+      <li><a href="../usuarios/usuarios.html">Usuarios</a></li>
+      <li><a href="../produccion/Produccion.html">Producción</a></li>
+      <li><a href="../ventas/Ventas.html">Ventas</a></li>
+      <li><a href="../stock/Stock.html">Stock</a></li>
+      <li><a href="../movimientos/movimientos.html">Movimientos</a></li>
+      <li class="fijo"><a href="clientes.html">Clientes</a></li>
+    </ul>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido">
+    <!-- Botón para ver usuarios existentes -->
+    <button class="btn" onclick="window.location.href='ver_clientes.html'">Ver Clientes</button>
+    <!-- Botón para crear usuarios nuevos -->
+    <button class="btn" onclick="window.location.href='crear_clientes.html'">Crear Cliente Nuevo</button>
+  </main>
+
+  <script src="usuarios.js"></script>
+</body>
+</html>

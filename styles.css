@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 200px;
+    margin-bottom: 0px;
+  }
+  
+  h1 {
+    color: #001F5A;
+    margin-bottom: 45px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    padding: 15px 30px;
+    margin: 10px 0;
+    background-color: #001F5A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #004c99;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .buttons {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+  .buttons button {
+      margin: 0 10px; /* Ajustamos el margen de los botones para mantener la separación deseada */
+      flex: 0 0 calc(33.33% - 20px); /* Dividimos los botones en tres columnas con un margen de 10px entre ellos */
+      max-width: calc(33.33% - 20px); /* Limitamos el ancho máximo de los botones para que no se expandan más allá de una tercera parte del contenedor */
+    }
+  }
+  

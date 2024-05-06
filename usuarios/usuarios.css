@@ -1,0 +1,116 @@
+.sidebar-menu li:first-child {
+    background-color: #0056b3;
+}
+
+.btn {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  background-color: #001F5A;
+  color: #fff;
+  margin-top: 20%;
+  margin-left: 5%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004c99;
+}
+
+/* Estilo para los botones en dispositivos pequeños */
+/*@media screen and (max-width: 600px) {
+    .btn {
+      font-size: 14px;
+    }
+  }
+ */
+
+ .contenido {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 100px;
+  margin-right: 10%;
+ }
+
+
+
+  /* Estilos para el formulario */
+  h1 {
+    color: #001F5A;
+    size: 20px;
+    margin-top: 30px;
+}
+.form-group {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #001F5A;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #001F5A;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #001F5A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+.cancelar_btn {
+    background-color: #001F5A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+
+/* Centrar el formulario en pantallas grandes */
+@media screen and (min-width: 768px) {
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+    }
+  
+    form {
+      width: 800px;
+    }
+}
+

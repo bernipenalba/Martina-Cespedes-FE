@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 200px;
+    margin-bottom: 0px;
+  }
+  
+  h1 {
+    color: #001F5A;
+    margin-bottom: 45px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: inline-block; /* Cambiamos a display: inline-block para que el texto se alinee a la izquierda */
+    text-align: left; /* Alineamos el texto a la izquierda */
+    width: 100%; /* Establecemos el ancho al 100% para que ocupe todo el espacio disponible */
+    margin-bottom: 5px;
+    color: #001F5A;
+    font-size: 16px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #001F5A;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #001F5A;
+    color: #fff;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #004c99;
+  }
+  
