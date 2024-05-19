@@ -11,17 +11,10 @@
   <!-- Navbar -->
   <header class="navbar">
     <div class="navbar-left">
-      <!-- Logo de la empresa -->
-      <img src="../img/LogoBlanco.png" alt="Logo de la empresa" class="logo">
-    </div>
-    <div class="navbar-right">
-      <!-- Icono del menú desplegable -->
-      <button id="toggleMenuBtn" class="menu-toggle-btn">&#9776;</button>
-      <!-- Opciones de usuario -->
-      <div class="user-options" id="userOptions">
-        <a href="#">Cerrar Sesión</a>
-        <!-- Otros enlaces de opciones de usuario -->
-      </div>
+      <a href="../Administrador.html">
+        <!-- Logo de la empresa -->
+        <img src="../img/LogoBlanco.png" alt="Logo de la empresa" class="logo">
+      </a>
     </div>
   </header>
 
@@ -35,7 +28,10 @@
           <li><a href="../movimientos/movimientos.html">Movimientos</a></li>
           <li><a href="../clientes/clientes.html">Clientes</a></li>
         </ul>
-      </aside>
+        <ul class="sidebar-bottom">
+          <li><a href="/ajustes/ajustes.html">Ajustes</a></li>
+        </ul>
+    </aside>
 
 <!-- Contenido principal -->
   <main class="contenido">
@@ -43,40 +39,40 @@
       <div class="form-group">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
+        <span class="error" id="nombreError"></span>
       </div>
       <div class="form-group">
         <label for="apellido">Apellido:</label>
         <input type="text" id="apellido" name="apellido" required>
+        <span class="error" id="apellidoError"></span>
       </div>
       <div class="form-group">
         <label for="dni">DNI:</label>
         <input type="text" id="dni" name="dni" required>
+        <span class="error" id="dniError"></span>
       </div>
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
       </div>
       <div class="form-group">
-        <label for="telefono">Teléfono:</label>
+        <label for="telefono">Número de teléfono:</label>
         <input type="tel" id="telefono" name="telefono" required>
+        <span class="error" id="telefonoError"></span>
       </div>
       <div class="form-group">
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" name="contraseña" required>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <span class="error" id="contrasenaError"></span>
       </div>
       <div class="form-group">
         <label for="confirmarContraseña">Confirmar Contraseña:</label>
-        <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
+        <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+        <span class="error" id="confirmarContrasenaError"></span>
       </div>
-      <div class="form-group">
-        <label for="tipoUsuario">Tipo de Usuario:</label>
-        <select id="tipoUsuario" name="tipoUsuario" required>
-          <option value="administrador">Administrador</option>
-          <option value="encargadoVentas">Encargado de Ventas</option>
-          <option value="encargadoProduccion">Encargado de Producción</option>
-        </select>
-      </div>
-      <button type="submit" class="aceptar_btn"  onclick="window.location.href='usuarios.html'">Crear Usuario</button>
+      
+      <button type="submit">Crear Usuario</button>
       <button class="cancelar_btn"  onclick="window.location.href='usuarios.html'">Cancelar</button>
     </form>
   </main>

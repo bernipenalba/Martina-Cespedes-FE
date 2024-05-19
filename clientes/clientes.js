@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('crearUsuarioForm');
+    const form = document.getElementById('crearClienteForm');
   
     form.addEventListener('submit', (e) => {
       e.preventDefault(); // Evitar el envío del formulario tradicional
@@ -12,11 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const apellido = document.getElementById('apellido').value.trim();
     const dni = document.getElementById('dni').value.trim();
     const email = document.getElementById('email').value.trim();
+    const segmento = document.getElementById('segmento').value.trim();
     const telefono = document.getElementById('telefono').value.trim();
-    const contrasena = document.getElementById('contrasena').value.trim();
-    const confirmarContrasena = document.getElementById('confirmarContrasena').value.trim();
-    const tipoUsuario = document.getElementById('tipoUsuario').value;
+    const direccion = document.getElementById('direccion').value.trim();
+    const provincia = document.getElementById('provincia').value.trim();
+    const localidad = document.getElementById('localidad').value.trim();
+    const comentario = document.getElementById('comentario');
   
+    
 // Validaciones
 let valid = true;
 
@@ -40,26 +43,19 @@ if (!/^\d{10}$/.test(telefono)) {
   valid = false;
 }
 
-if (contrasena.length < 5) {
-  showError('contrasenaError', 'La contraseña debe tener al menos 5 caracteres.');
-  valid = false;
-}
-
-if (contrasena !== confirmarContrasena) {
-  showError('confirmarContrasenaError', 'Las contraseñas no coinciden.');
-  valid = false;
-}
-
 if (valid) {
   // Crear un objeto con los datos del formulario
-  const usuario = {
+  const cliente = {
     nombre,
     apellido,
     dni,
     email,
+    segmento,
     telefono,
-    contrasena,
-    tipoUsuario
+    direccion,
+    provincia,
+    localidad,
+    comentario
   };
 
   // Enviar los datos al backend usando fetch
@@ -68,20 +64,20 @@ if (valid) {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(usuario)
+    body: JSON.stringify(cliente)
   })
   .then(response => response.json())
   .then(data => {
     if (data.success) {
-      alert('Usuario creado exitosamente');
+      alert('Cliente creado exitosamente');
       form.reset();
     } else {
-      alert('Error al crear el usuario');
+      alert('Error al crear el cliente');
     }
   })
   .catch(error => {
     console.error('Error:', error);
-    alert('Error al crear el usuario');
+    alert('Error al crear el cliente');
   });
 }
 });

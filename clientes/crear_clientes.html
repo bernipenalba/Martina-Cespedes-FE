@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clientes</title>
+  <title>Crear Cliente</title>
   <link rel="stylesheet" href="clientes.css">
   <link rel="stylesheet" href="../base.css">
   
@@ -12,17 +12,10 @@
   <!-- Navbar -->
   <header class="navbar">
     <div class="navbar-left">
-      <!-- Logo de la empresa -->
-      <img src="../img/LogoBlanco.png" alt="Logo de la empresa" class="logo">
-    </div>
-    <div class="navbar-right">
-      <!-- Icono del menú desplegable -->
-      <button id="toggleMenuBtn" class="menu-toggle-btn">&#9776;</button>
-      <!-- Opciones de usuario -->
-      <div class="user-options" id="userOptions">
-        <a href="#">Cerrar Sesión</a>
-        <!-- Otros enlaces de opciones de usuario -->
-      </div>
+      <a href="../Administrador.html">
+        <!-- Logo de la empresa -->
+        <img src="../img/LogoBlanco.png" alt="Logo de la   empresa" class="logo">
+      </a>
     </div>
   </header>
 
@@ -36,52 +29,64 @@
       <li><a href="../movimientos/movimientos.html">Movimientos</a></li>
       <li class="fijo"><a href="clientes.html">Clientes</a></li>
     </ul>
+    <ul class="sidebar-bottom">
+      <li><a href="/ajustes/ajustes.html">Ajustes</a></li>
+    </ul>
   </aside>
 
   <!-- Contenido principal -->
   <main class="contenido">
-    <form id="crearUsuarioForm">
+    <form id="crearClienteForm">
       <div class="form-group">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
+        <span class="error" id="nombreError"></span>
       </div>
       <div class="form-group">
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
+        <input type="text" id="apellido" name="apellido">
+        <span class="error" id="apellidoError"></span>
       </div>
       <div class="form-group">
         <label for="dni">DNI/CUIT:</label>
         <input type="text" id="dni" name="dni" required>
+        <span class="error" id="dniError"></span>
       </div>
       <div class="form-group">
         <label for="segmento">Segmento:</label>
         <input type="text" id="segmento" name="segmento" required>
       </div>
       <div class="form-group">
-        <label for="telefono">Teléfono:</label>
+        <label for="telefono">Número de teléfono:</label>
         <input type="tel" id="telefono" name="telefono" required>
+        <span class="error" id="telefonoError"></span>
       </div>
       <div class="form-group">
-        <label for="dirección">Dirección:</label>
-        <input type="text" id="dirección" name="dirección" required>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+        <span class="error" id="direccionError"></span>
       </div>
       <div class="form-group">
         <label for="provincia">Provincia:</label>
         <input type="text" id="Provincia" name="Provincia" required>
+        <span class="error" id="provinciaError"></span>
       </div>
       <div class="form-group">
         <label for="localidad">Localidad:</label>
         <input type="text" id="localidad" name="localidad" required>
+        <span class="error" id="localidadError"></span>
       </div>
       <div class="form-group">
         <label for="comentario">Comentario:</label>
-        <input type="text" id="comentario" name="comentario" required>
+        <input type="text" id="comentario" name="comentario">
       </div>
-      <button type="submit" class="aceptar_btn"  onclick="window.location.href='clientes.html'">Crear Cliente</button>
+
+
+      <button type="submit">Crear Cliente</button>
       <button class="cancelar_btn"  onclick="window.location.href='clientes.html'">Cancelar</button>
     </form>
   </main>
 
-  <script src="usuarios.js"></script>
+  <script src="clientes.js"></script>
 </body>
 </html>
