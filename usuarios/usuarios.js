@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const telefono = document.getElementById('telefono').value.trim();
     const contrasena = document.getElementById('contrasena').value.trim();
     const confirmarContrasena = document.getElementById('confirmarContrasena').value.trim();
-    const tipoUsuario = document.getElementById('tipoUsuario').value;
   
 // Validaciones
 let valid = true;
@@ -59,7 +58,6 @@ if (valid) {
     email,
     telefono,
     contrasena,
-    tipoUsuario
   };
 
   // Enviar los datos al backend usando fetch

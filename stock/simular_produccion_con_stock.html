@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calcular Producción</title>
+  <title>Simular Producción</title>
   <link rel="stylesheet" href="stock.css">
   <link rel="stylesheet" href="../base.css">
   
@@ -36,7 +36,7 @@
 
   <!-- Contenido principal -->
   <main class="contenido">
-    <form id="crearMateriaPrimaForm">
+    <form id="simularProduccionForm">
         <div class="form-group">
             <label for="tipo">¿Qué quieres producir?</label>
             <select id="tipo" name="tipo" required>
@@ -44,22 +44,18 @@
               <option value="vermu">Vermú</option>
             </select>
         <div class="form-group">
-            <label for="cajas">Cajas</label>
+            <label for="cajas">Tipo de cajas</label>
             <select id="cajas" name="cajas" required>
-              <option value="x4">x4 Botellas</option>
-              <option value="x6">x6 Botellas</option>
+              <option value="x4">Caja de 4 botellas</option>
+              <option value="x6">Caja de 6 Botellas</option>
               <option value="botella">Botella individual</option>
             </select>
           </div>
-        <div class="form-group">
-          <label for="descripcion">Descripción</label>
-          <input type="text" id="descripcion" name="descripcion">
-        </div> 
         <button type="submit" class="aceptar_btn"  onclick="window.location.href='stock.html'">Calcular</button>
-        <button class="cancelar_btn"  onclick="window.location.href='stock.html'">Cancelar</button>
+        <button type="button" class="cancelar_btn"  onclick="window.location.href='stock.html'">Cancelar</button>
       </form>
   </main>
 
-  <script src="produccion.js"></script>
+  <script src="simular_produccion_con_stock.js"></script>
 </body>
 </html>

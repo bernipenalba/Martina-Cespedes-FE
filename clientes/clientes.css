@@ -7,21 +7,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh; /* Ajusta según sea necesario */
+  height: 40vh;
+  margin-left: 60px;
 }
 
 .btn {
   width:200%;
-  max-width: 400px;
-  padding: 12px;
+  padding: 10px;
   background-color: #001F5A;
   color: #fff;
-  margin-top: 15px;
+  margin-top: 12px;
   margin-left: 550%;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 16px;
+  font-size: 15px;
+  border: none;
 }
 
 button:hover {
@@ -32,14 +33,6 @@ button:active {
   background-color: #004c99;
 }
 
-/* Estilo para los botones en dispositivos pequeños */
-/*@media screen and (max-width: 600px) {
-    .btn {
-      font-size: 14px;
-    }
-  }
- */
-
  .contenido {
   display: flex;
   margin-left: 250px;
@@ -47,14 +40,7 @@ button:active {
   margin-right: 10%;
  }
 
-
-
   /* Estilos para el formulario */
-  h1 {
-    color: #001F5A;
-    size: 20px;
-    margin-top: 30px;
-}
 .form-group {
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
@@ -64,6 +50,7 @@ button:active {
     display: block;
     margin-bottom: 5px;
     color: #001F5A;
+    font-size: 15px;
   }
   
   input[type="text"],
@@ -72,10 +59,10 @@ button:active {
   input[type="password"],
   select {
     width: 100%;
-    padding: 5px;
+    padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 15px;
+    border-radius: 4px;
+    font-size: 13px;
     color: #001F5A;
     box-sizing: border-box;
   }
@@ -84,11 +71,11 @@ button:active {
     background-color: #001F5A;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 15px;
     cursor: pointer;
-    margin: 20px;
+    width: 200px;
   }
   
   button:hover {
@@ -97,14 +84,19 @@ button:active {
   
 
 .cancelar_btn {
-    background-color: #001F5A;
+  background-color: rgb(117, 115, 115);
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 15px;
     cursor: pointer;
-    margin: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+.cancelar_btn:hover{
+  background-color: rgb(99, 98, 98);
 }
 
 
@@ -120,4 +112,42 @@ button:active {
     form {
       width: 800px;
     }
+}
+
+
+.contenido {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 100px;
+  margin-right: 10%;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 600px;
+ }
+
+ .error{
+  color: red;
+  font-size: 13px;
+  padding-top: 8px;
+ }
+
+
+/* ESTILO DE LA TABLA*/
+
+table {
+width: 100%;
+margin-top: 0 px;
+}
+
+th {
+padding: 10px;
+border: 1px solid #ddd;
+text-align: center;
+color: #001F5A;
+font-size: 16px;
+font-weight: 100;
+}
+
+th {
+background-color: #f4f4f4;
 }

@@ -38,30 +38,32 @@
   <main class="contenido">
     <form id="crearMateriaPrimaForm">
         <div class="form-group">
-          <label for="nombre">Nombre Materia Prima:</label>
+          <label for="nombre">Nombre materia prima</label>
           <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div class="form-group">
-          <label for="descripcion">Descripción</label>
-          <input type="text" id="descripcion" name="descripcion">
+          <span id="nombreError" class="error"></span>
         </div>        
         <div class="form-group">
           <label for="medida">Medida</label>
           <select id="medida" name="medida" required>
-            <option value="litro">Litro</option>
-            <option value="kilo">Kilo</option>
+            <option value="litro">Litros</option>
+            <option value="kilo">Gramos</option>
             <option value="unidad">Unidad</option>
           </select>
         </div>
         <div class="form-group">
             <label for="cantidad">Cantidad</label>
             <input type="text" id="cantidad" name="cantidad" required>
+            <span id="cantidadError" class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="descripcion">Descripción</label>
+          <input type="text" id="descripcion" name="descripcion">
         </div>   
-        <button type="submit" class="aceptar_btn"  onclick="window.location.href='materias_primas.html'">Crear Materia Prima</button>
-        <button class="cancelar_btn"  onclick="window.location.href='materias_primas.html'">Cancelar</button>
+        <button type="submit" class="aceptar_btn"  onclick="window.location.href='materias_primas.html'">Crear materia prima</button>
+        <button type="button" class="cancelar_btn"  onclick="window.location.href='materias_primas.html'">Cancelar</button>
       </form>
   </main>
 
-  <script src="produccion.js"></script>
+  <script src="crear_materia_prima.js"></script>
 </body>
 </html>

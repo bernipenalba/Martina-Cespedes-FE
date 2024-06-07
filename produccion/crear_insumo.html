@@ -36,24 +36,26 @@
 
   <!-- Contenido principal -->
   <main class="contenido">
-    <form id="crearMateriaPrimaForm">
+    <form id="crearInsumoForm">
         <div class="form-group">
-          <label for="nombre">Nombre Insumo:</label>
+          <label for="nombre">Nombre insumo:</label>
           <input type="text" id="nombre" name="nombre" required>
+          <span id="nombreError" class="error"></span>
         </div>
         <div class="form-group">
-          <label for="descripcion">Descripción</label>
+          <label for="descripcion">Descripción:</label>
           <input type="text" id="descripcion" name="descripcion">
         </div>        
         <div class="form-group">
-            <label for="cantidad">Cantidad (unidades)</label>
+            <label for="cantidad">Cantidad (unidades):</label>
             <input type="text" id="cantidad" name="cantidad" required>
+            <span id="cantidadError" class="error"></span>
         </div>   
-        <button type="submit" class="aceptar_btn"  onclick="window.location.href='insumos.html'">Crear Insumo</button>
-        <button class="cancelar_btn"  onclick="window.location.href='insumos.html'">Cancelar</button>
+        <button type="submit" class="aceptar_btn"  onclick="window.location.href='insumos.html'">Crear insumo</button>
+        <button type="button" class="cancelar_btn"  onclick="window.location.href='insumos.html'">Cancelar</button>
       </form>
   </main>
 
-  <script src="produccion.js"></script>
+  <script src="crear_insumo.js"></script>
 </body>
 </html>

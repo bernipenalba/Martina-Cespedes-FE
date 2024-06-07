@@ -11,10 +11,11 @@
     <div class="container">
       <img src="../img/logo.png" alt="Logo de la empresa" class="logo" />
       <h1>Iniciar Sesión</h1>
-      <form id="login-form">
+      <form id="loginForm">
         <div class="input-group">
           <label for="dni">DNI</label>
-          <input type="text" id="dni" name="dni" autocomplete="off" />
+          <input type="text" id="dni" name="dni" required autocomplete="off" />
+          <span class="error" id="dniError"></span>
         </div>
         <div class="input-group">
           <label for="password">Contraseña</label>
@@ -25,8 +26,12 @@
             autocomplete="off"
             required
           />
+          <span class="error" id="passwordError"></span>
         </div>
-        <button onclick="iniciarSesionAdmin()">Iniciar Sesión</button>
+
+        <button type="submit" onclick="iniciarSesionAdmin()">Iniciar sesión</button>
+        <span class="error" id="loginError"></span>
+
       </form>
     </div>
   </body>

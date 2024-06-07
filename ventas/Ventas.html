@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movimientos</title>
+  <title>Ventas</title>
   <link rel="stylesheet" href="ventas.css">
   <link rel="stylesheet" href="../base.css">
   
@@ -36,11 +36,43 @@
     </ul>
   </aside>
 
-  <!-- Contenido principal -->
   <main class="contenido">
-    
+    <div id="ventaForm">
+      <p id="fechaActual"></p>
+      <label for="cliente">Cliente</label>
+      <select id="cliente">
+        <option value="">Seleccione un cliente</option>
+        <!-- Opciones de clientes -->
+      </select>
+      <button class="ventasBtn" onclick="window.location.href='../clientes/crear_clientes.html'">Crear cliente</button>
+      <button class="ventasBtn">Agregar cliente</button>
+      <label for="producto">Producto</label>
+      <select id="producto">
+        <option value="">Seleccione un producto</option>
+        <!-- Opciones de productos -->
+      </select>
+      <button class="ventasBtn">Agregar producto</button>
+
+      <table id="productosTable">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Subtotal</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Productos seleccionados -->
+        </tbody>
+      </table>
+      <p id="montoTotal">Total: $0.00</p>
+      
+      <button id="confirmarVentaBtn">Confirmar venta</button>
+      <button id="cancelarVentaBtn">Cancelar</button>
+    </div>
   </main>
 
-  <script src="produccion.js"></script>
-</body>
+  <script src="ventas.js"></script>
 </html>

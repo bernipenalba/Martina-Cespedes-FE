@@ -31,27 +31,26 @@ body {
     width: 100%; /* Establecemos el ancho al 100% para que ocupe todo el espacio disponible */
     margin-bottom: 5px;
     color: #001F5A;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .input-group input {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    color: #001F5A;
   }
   
   button {
-    width: 100%;
-    padding: 12px;
+    width: 200px;
+    padding: 10px;
     background-color: #001F5A;
     color: #fff;
-    
+    border: none;    
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   button:hover {

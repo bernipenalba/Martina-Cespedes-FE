@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crear Usuario</title>
+  <title>Ver Usuario</title>
   <link rel="stylesheet" href="usuarios.css">
   <link rel="stylesheet" href="../base.css">
 </head>
@@ -34,9 +34,22 @@
       </aside>
 
 <!-- Contenido principal -->
-  <main class="contenido">
-    
-  </main>
-  <script src="usuarios.js"></script>
+<main class="contenido">
+  <table id="UsuariosTable">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>DNI</th>
+        <th>Email</th>
+        <th>Teléfono</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Las filas se agregarán aquí dinámicamente -->
+    </tbody>
+  </table>
+</main>
+<script src="ver_usuarios.js"></script>
 </body>
 </html>

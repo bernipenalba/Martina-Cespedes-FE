@@ -3,14 +3,15 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     min-height: 100vh;
+    background-color: #f0f0f0;
   }
   
   .navbar {
     background-color: #001F5A;
-    color: #fff;
+    color: #f0f0f0;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 8.9px 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -46,20 +47,19 @@ body {
 
   .sidebar-menu a {
     text-decoration: none; /* Elimina el subrayado */
-    color: white; /* Color blanco para el texto */
+    color: #f0f0f0; /* Color blanco para el texto */
     margin-bottom: 10px; /* Separación entre elementos */
   }
 .sidebar-bottom {
   list-style: none;
   padding: 0;
   margin-bottom: 150px;
-
 }
 
 .sidebar-bottom li a {
-  color: #fff;
+  color: #f0f0f0;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .sidebar-bottom li {

@@ -1,3 +1,35 @@
 .fijo {
     background-color: #0056b3;
 }
+
+.contenido {
+    display: flex;
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-right: 10%;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 600px;
+   }
+  
+  
+  /* ESTILO DE LA TABLA*/
+  
+  table {
+  width: 100%;
+  margin-top: 0 px;
+  }
+  
+  th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #001F5A;
+  font-size: 16px;
+  font-weight: 100;
+  }
+  
+  th {
+  background-color: #f4f4f4;
+  }
+  

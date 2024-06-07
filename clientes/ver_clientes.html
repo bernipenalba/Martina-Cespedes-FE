@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clientes</title>
+  <title>Ver Clientes</title>
   <link rel="stylesheet" href="clientes.css">
   <link rel="stylesheet" href="../base.css">
   
@@ -36,9 +36,25 @@
 
   <!-- Contenido principal -->
   <main class="contenido">
-    
+    <table id="movimientosTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>DNI/CUIT</th>
+          <th>Segmento</th>
+          <th>Teléfono</th>
+          <th>Dirección</th>
+          <th>Provincia</th>
+          <th>Localidad</th>
+          <th>Comentario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Las filas se agregarán aquí dinámicamente -->
+      </tbody>
+    </table>
   </main>
-
   <script src="clientes.js"></script>
 </body>
 </html>
